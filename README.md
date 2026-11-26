@@ -89,7 +89,14 @@ dotnet run --project DocumentManagement.API
 
 The application will display its local URL in the terminal.
 
-OpenAPI documentation is available when running in the Development environment.
+API documentation is available when running in the Development environment.
+
+- **Swagger UI:** `http://localhost:5173/swagger`
+- **OpenAPI JSON:** `http://localhost:5173/openapi/v1.json`
+
+Use Swagger UI to explore and test the available endpoints. Click **Try it out** to execute API requests, including document upload, retrieval, download, and deletion.
+
+> Note: Swagger UI and the OpenAPI JSON endpoint are enabled only in the Development environment. If the application uses a different port, use the URL displayed in the terminal.
 
 ## Run the Tests
 
