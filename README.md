@@ -172,10 +172,16 @@ The API uses appropriate HTTP status codes:
 
 ## AI Disclosure
 
-AI tools were used as development assistance for technical explanations, implementation suggestions, debugging, test scenarios, and documentation.
+**AI Tool Used:** ChatGPT (OpenAI).
 
-The implementation was reviewed and adjusted during development. I remain responsible for understanding the code, design decisions, and test results.
+**How It Was Used:**
+ChatGPT was used as a development assistant to discuss implementation approaches, explain technical concepts, troubleshoot issues, suggest validation and testing scenarios, and improve project documentation.
 
+**Code Review and Modifications:**
+I reviewed the suggested implementations against the assessment requirements, inspected the API controllers, document service, repository, file storage implementation, and automated tests. I also reviewed the suggested changes, executed the application build and automated tests, and checked the resulting test output before finalizing the project.
+
+**Areas Requiring Further Improvement:**
+The area I am least confident about is failure recovery involving both database operations and filesystem operations. The implementation attempts to restore document metadata if physical file deletion fails, but the database and filesystem cannot participate in one atomic transaction. If both deletion and metadata restoration fail, manual recovery may be required. File validation also does not include antivirus scanning.
 ## License
 
 Created for technical assessment purposes.
