@@ -1,0 +1,35 @@
+﻿# Build output
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# IDE files
+.idea/
+
+# Uploaded documents
+**/uploads/
+
+# Database files
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test results
+TestResults/
+*.trx
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
